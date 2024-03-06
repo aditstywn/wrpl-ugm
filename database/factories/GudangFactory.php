@@ -19,7 +19,7 @@ class GudangFactory extends Factory
         static $increment = 0;
 
         $increment++;
-        $kodeGudang = 'GDNG' . str_pad($increment, 4, '0', STR_PAD_LEFT);
+        $kodeGudang = 'GDNG' . str_pad($increment, 3, '0', STR_PAD_LEFT);
 
         return [
             'kode_gudang' => $kodeGudang,

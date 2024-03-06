@@ -19,7 +19,7 @@ class BarangFactory extends Factory
         static $increment = 0;
 
         $increment++;
-        $kodeBarang = 'BRG' . str_pad($increment, 4, '0', STR_PAD_LEFT);
+        $kodeBarang = 'BRG' . str_pad($increment, 3, '0', STR_PAD_LEFT);
 
         return [
             'kode_barang' => $kodeBarang,

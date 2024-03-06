@@ -19,7 +19,7 @@ class StokTokoFactory extends Factory
         static $increment = 0;
 
         $increment++;
-        $kodeSuratJalan = 'SRJLN' . str_pad($increment, 4, '0', STR_PAD_LEFT);
+        $kodeSuratJalan = 'SRJLN' . str_pad($increment, 3, '0', STR_PAD_LEFT);
 
         return [
             'kode_surat_jalan' => $kodeSuratJalan,

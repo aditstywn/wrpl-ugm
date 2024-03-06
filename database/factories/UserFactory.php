@@ -26,7 +26,7 @@ class UserFactory extends Factory
         static $increment = 0; // Inisialisasi variabel $increment sebagai bilangan bulat
 
         $increment++;
-        $kodeUser = 'U' . str_pad($increment, STR_PAD_LEFT);
+        $kodeUser = 'USR' . str_pad($increment, 3, '0', STR_PAD_LEFT);
 
         return [
             'role_id' => mt_rand(1, 4),
